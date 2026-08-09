@@ -1,0 +1,76 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-width: 900px;
+}
+
+.page h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.page > div:first-child p {
+  margin-top: 0.6rem;
+  color: var(--color-text-secondary);
+}
+
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.panelHeader {
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.panelHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.panelHeader p {
+  margin-top: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 1.8rem 2rem;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.setting:last-child {
+  border-bottom: 0;
+}
+
+.setting strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.setting span {
+  display: block;
+  max-width: 60rem;
+  margin-top: 0.3rem;
+
+  color: var(--color-text-muted);
+  font-size: 1.15rem;
+}
+
+.setting input {
+  width: 4rem;
+  height: 2.2rem;
+
+  accent-color: var(--color-accent);
+}

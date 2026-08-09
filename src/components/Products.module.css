@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.description {
+  margin-top: 0.7rem;
+  color: var(--color-text-secondary);
+}
