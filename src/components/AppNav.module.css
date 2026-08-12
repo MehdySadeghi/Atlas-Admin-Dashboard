@@ -1,0 +1,90 @@
+.nav {
+  min-height: 100vh;
+  padding: 3rem 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--color-surface);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 6rem;
+}
+
+.brandName {
+  color: var(--color-text-primary);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.brandSubtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.2rem;
+}
+
+.sectionLabel {
+  margin-bottom: 1.6rem;
+
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list li {
+  margin: 0;
+  padding: 0;
+}
+
+.link,
+.linkActive {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 4.4rem;
+  padding: 0 1.4rem;
+
+  border-radius: 0.7rem;
+
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.link {
+  color: var(--color-text-secondary);
+}
+
+.link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-muted);
+}
+
+.linkActive {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-muted);
+  font-weight: 600;
+}
