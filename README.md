@@ -1,16 +1,129 @@
-# React + Vite
+# Atlas Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Atlas is a responsive admin dashboard built with React. The project provides a structured interface for managing products and navigating between different sections of an admin application.
 
-Currently, two official plugins are available:
+The project was built as a practical React project to improve my experience with reusable components, routing, responsive layouts, CSS Modules, and organizing a larger React application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive admin dashboard layout
+- Dashboard overview
+- Product listing
+- Product details
+- Reusable product cards
+- Analytics section
+- Statistics section
+- Users section
+- Settings page
+- Application navigation
+- Dashboard navigation
+- Product navigation
+- Responsive product images
+- Reusable loading and spinner components
+- Client-side routing
+- Component-level styling with CSS Modules
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
+- React
+- React Router
+- JavaScript
+- Vite
+- CSS Modules
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+src/
+├── assets/
+│   └── images/
+├── components/
+│   ├── Analytics.jsx
+│   ├── AppNav.jsx
+│   ├── Dashboard.jsx
+│   ├── DashboardNav.jsx
+│   ├── Header.jsx
+│   ├── Overview.jsx
+│   ├── ProductCard.jsx
+│   ├── ProductDetails.jsx
+│   ├── ProductList.jsx
+│   ├── Products.jsx
+│   ├── ProductsNav.jsx
+│   ├── Settings.jsx
+│   ├── Spinner.jsx
+│   ├── SpinnerFullPage.jsx
+│   ├── Statistics.jsx
+│   └── Users.jsx
+├── data/
+│   └── products.js
+├── pages/
+│   ├── AppLayout.jsx
+│   └── Homepage.jsx
+├── styles/
+│   └── globals.css
+├── App.jsx
+└── main.jsx
+Getting Started
+Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/MehdySadeghi/Atlas-Admin-Dashboard.git
+
+Navigate to the project directory:
+
+cd Atlas-Admin-Dashboard
+
+Install the dependencies:
+
+npm install
+Run the Development Server
+npm run dev
+
+Vite will provide the local development URL in the terminal.
+
+Build for Production
+npm run build
+Preview the Production Build
+npm run preview
+Project Approach
+
+The application is separated into reusable components rather than keeping the dashboard in one large component.
+
+The main layout is separated from individual dashboard sections, while components such as product cards, navigation elements, headers, and loading states are kept reusable.
+
+Product data is stored separately from the UI components. This keeps the data and presentation logic separated and makes the product-related components easier to maintain.
+
+CSS Modules are used for component-specific styling so that styles remain scoped to the components they belong to.
+
+React Router is used to handle navigation between the different views of the application.
+
+What I Practiced
+
+While building Atlas, I focused on:
+
+Structuring a larger React application
+Breaking a UI into reusable components
+Working with React Router
+Creating responsive layouts
+Using CSS Modules
+Separating data from presentation
+Building reusable loading states
+Organizing product-related components
+Keeping the project structure clean as the application grows
+Status
+
+This project is currently a completed learning and portfolio project.
+
+It can be extended with additional features and functionality as the project evolves.
+
+Author
+
+Mehdy Sadeghi
+
+GitHub: https://github.com/MehdySadeghi
